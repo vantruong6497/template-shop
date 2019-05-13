@@ -1,0 +1,136 @@
+.block-footer {
+    position: relative;
+    padding: 30px 0;
+    height: auto;
+    background: $color-bg;
+    .footer-top {
+        height: 250px;
+        border-bottom: 1px solid;
+    }
+    .row.footer-center {
+        padding: 30px 0;
+    }
+    .content {
+        line-height: 30px;
+        i {
+            float: left;
+            margin-right: 10px;
+            line-height: 10px;
+            margin-top: 10px;
+        }
+        p {
+            width: 90%;
+        }
+    }
+    .col1 {
+        width: 30%;
+    }
+    .col2 {
+        width: 20%;
+        .content {
+            line-height: 35px;
+        }
+    }
+    .col3 {
+        width: 20%;
+        .content {
+            line-height: 35px;
+        }
+    }
+    .col4 {
+        width: 20%;
+        .content {
+            line-height: 35px;
+        }
+    }
+    .col5 {
+        width: 10%;
+    }
+    .top-title-pro {
+        i.fab.fa-windows.pig {
+            float: left;
+            color: $color-click;
+            margin-right: 10px;
+        }
+        h3.title-name {
+            font-size: 18px;
+            font-family: "Roboto";
+            color: rgb(17, 17, 17);
+            margin-left: 10px;
+        }
+    }
+    .col6 {
+        width: 50%;
+        img {
+            padding: 3px;
+        }
+    }
+    .col7 {
+        width: 50%;
+        .footer-phone-a {
+            float: left;
+            margin-top: 20px;
+        }
+        .footer-phone-b {
+            float: right;
+            margin-top: 20px;
+        }
+        p.c {
+            margin-left: 84px;
+        }
+        span {
+            color: red;
+            font-weight: 700;
+        }
+        i.fas.fa-phone {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 77%;
+            border: 1px solid;
+            color: $color-click;
+        }
+        .fa-phone:before {
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+            transform: rotate(90deg);
+        }
+        i.fas.fa-comments {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 77%;
+            border: 1px solid;
+            color: $color-click;
+        }
+        .fa-comments:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .row.footer-bottom {
+        height: 50px;
+        background: black;
+        .ft-bottom {
+            width: 100%;
+            color: $color-bg;
+            .col-md-6.a {
+                margin-left: 93px;
+                p {
+                    margin-top: 15px;
+                }
+            }
+            .col-md-6.b {
+                float: right;
+                margin-top: -15px;
+                a {
+                    color: $color-bg;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,252 @@
+section.block-product-featured
+    .container
+        .block-left
+            .top-title-pro
+                i.fab.fa-windows.pig
+                h3.title-name SẢN PHẨM NỔI BẬT
+            .menu-list-pro
+                ul.list-menu
+                    each item in ['Máy khoan, cắt CNC','Máy in phun khổ lớn','Máy quét Canon 3D','Máy hàn điện Alunima','Máy khoan Decameta','Máy phay đa năng CNC','Máy mài, tiện DC 12V','Máy khoan, cắt CNC','Máy quay thông minh N3','Motor R34C đa dụng','Máy in laser màu 3D']
+                        li.link-menu
+                            a(href="")
+                                i.fab.fa-windows
+                                h3 #{item}
+        .block-right
+            .top-list-menu
+                ul.list-pro
+                    li.left
+                        a(href="")
+                            i.fas.fa-caret-left
+                    li.right
+                        a(href="")
+                            i.fas.fa-caret-right
+            .list-product
+                .row
+                    each pro in ['product_01.png','product_02.png','product_03.png']
+                        -var link = pro
+                            .col-md-4.link-pro
+                                .product-block
+                                    img(src="../../images/" + link, alt="").pro
+                                    .content-pro
+                                        p.price 1.550.00 Đ
+                                        h3.pro-name MÁY KHOAN BLACK DECKER
+                                        p.evaluate
+                                            -for(var i=0 ; i<4; i++){
+                                                i.fas.fa-star.tik
+                                            -}
+                                            i.fas.fa-star
+                                                span.danhgia (12 Đánh giá)
+                                    .group-button
+                                        button.click MUA NGAY
+                                        button.click XEM CHI TIẾT
+                .row
+                    each pro in ['product_4.png','product_5.png','product_6.png']
+                        -var link = pro
+                            .col-md-4.link-pro
+                                .product-block
+                                    img(src="../../images/" + link, alt="").pro
+                                    .content-pro
+                                        p.price 1.550.00 Đ
+                                        h3.pro-name MÁY KHOAN BLACK DECKER
+                                        p.evaluate
+                                            -for(var i=0 ; i<4; i++){
+                                                i.fas.fa-star.tik
+                                            -}
+                                            i.fas.fa-star
+                                                span.danhgia (12 Đánh giá)
+                                        .group-button
+                                            button.click MUA NGAY
+                                            button.click XEM CHI TIẾT
+section.block-product-new
+    .container
+        .row.title
+            .block-left
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name SẢN PHẨM MỚI
+            .block-menu
+                .top-list-menu
+                    ul.menu-product
+                        each menu in ['Máy khoan','Máy in 3D','Máy CNC','Máy tiện','Máy khác']
+                            li.menu-link-pro
+                                a(href="").link #{menu}
+            .block-right
+                ul.list-pro
+                    li.left
+                        a(href="")
+                            i.fas.fa-caret-left
+                    li.right
+                        a(href="")
+                            i.fas.fa-caret-right
+        .row.pro
+            each npro in ['product_8.png','product_7.png','product_10.png']
+                -var link = npro
+                    .col-md-4
+                        .product-block
+                            img(src="../../images/" + link, alt="").pro
+                            .content-pro
+                                p.price 1.550.00 Đ
+                                h3.pro-name MÁY KHOAN BLACK DECKER
+                                p.evaluate
+                                    -for(var i=0 ; i<4; i++){
+                                        i.fas.fa-star.tik
+                                    -}
+                                    i.fas.fa-star
+                                        span.danhgia (12 Đánh giá)
+                                .group-button
+                                    button.click MUA NGAY
+                                    button.click XEM CHI TIẾT
+section.block-banner-1
+    .container
+        .row
+            .col-md-6
+                .block-item-banner
+                    img(src="../../images/banner2.png", alt="").img-banner
+                    .banner-intro
+                        h1.name-product DEMISHI
+                        h3.intro-sp MÁY HÀN XÌ CHUYÊN NGHIỆP
+                        p.price 2.250.000 Đ
+                        p.opp CƠ HỘI TRÚNG NGAY TIVI SAMSUNG LCD TRỊ GIÁ 
+                            span 2.700.000 Đ
+            .col-md-6
+                .block-item-banner
+                    img(src="../../images/banner1.png", alt="").img-banner
+                    .banner-intro
+                        h1.name-product MAKITA
+                        h3.intro-sp MÁY KHOAN - CẮT ĐA NĂNG
+                        p.price 7.450.000 Đ
+                        p.opp TẶNG NGAY 1 BỘ PHỤ KIỆN CAO CẤP TRỊ GIÁ 
+                            span 600.000 Đ
+section.block-product-selling
+    .container
+        .row
+            .block-left
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name SẢN PHẨM BÁN CHẠY
+            .block-menu
+                .top-list-menu
+                    ul.menu-product
+                        each menu in ['Máy khoan','Máy in 3D','Máy CNC','Máy tiện','Máy khác']
+                            li.menu-link-pro
+                                a(href="").link #{menu}
+            .block-right
+                ul.list-pro
+                    li.left
+                        a(href="")
+                            i.fas.fa-caret-left
+                    li.right
+                        a(href="")
+                            i.fas.fa-caret-right
+        .row.link-pro
+            .col-md-3
+                each proc in ['product_4.png','product_4.png']
+                    -var link = proc
+                        .product-block
+                            img(src="../../images/" +link , alt="").pro
+                            .content-pro
+                                p.price 1.550.00 Đ
+                                h3.pro-name MÁY KHOAN BLACK DECKER
+                                p.evaluate
+                                    -for(var i=0 ; i<4; i++){
+                                        i.fas.fa-star.tik
+                                    -}
+                                    i.fas.fa-star
+                                        span.danhgia (12 Đánh giá)
+                            .group-button
+                                button.click MUA NGAY
+                                button.click XEM CHI TIẾT
+            .col-md-6
+                .product-block-pig
+                    img(src="../../images/productpig.png" , alt="").pro
+                    .content-pro
+                        p.price 1.550.00 Đ
+                        h3.pro-name MÁY KHOAN BLACK DECKER
+                        p.evaluate
+                            -for(var i=0 ; i<4; i++){
+                                i.fas.fa-star.tik
+                            -}
+                            i.fas.fa-star
+                                span.danhgia (12 Đánh giá)
+                    .group-button
+                        button.click MUA NGAY
+                        button.click XEM CHI TIẾT
+            .col-md-3
+                each proc in ['product_4.png','product_4.png']
+                    -var link = proc
+                        .product-block
+                            img(src="../../images/" +link , alt="").pro
+                            .content-pro
+                                p.price 1.550.00 Đ
+                                h3.pro-name MÁY KHOAN BLACK DECKER
+                                p.evaluate
+                                    -for(var i=0 ; i<4; i++){
+                                        i.fas.fa-star.tik
+                                    -}
+                                    i.fas.fa-star
+                                        span.danhgia (12 Đánh giá)
+                            .group-button
+                                button.click MUA NGAY
+                                button.click XEM CHI TIẾT
+section.block-banner-2
+    .container
+        .row
+            .block-item-banner
+                .banner-intro
+                    .group-button
+                        button.click MUA NGAY
+                        button.click XEM CHI TIẾT
+
+section.block-product-justnew
+    .container
+        .row
+            .block-left
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name HÀNG MỚI VỀ
+            .block-right
+                ul.list-pro
+                    li.left
+                        a(href="")
+                            i.fas.fa-caret-left
+                    li.right
+                        a(href="")
+                            i.fas.fa-caret-right
+        .row.mv
+            each pro in ['product_01.png','product_02.png']
+                -var link = pro
+                    .col-md-6.link-pro
+                        .product-block
+                            img(src="../../images/" + link, alt="").mv
+                            .content-pro
+                                h1.name-product MÁY KHOAN CNC 3D
+                                p.evaluate
+                                    -for(var i=0 ; i<4; i++){
+                                        i.fas.fa-star.tik
+                                    -}
+                                    i.fas.fa-star
+                                        span.danhgia (12 Đánh giá)
+                                h3.pro-name Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore commo...
+                                p.price 2.350.00 Đ
+                            .group-button
+                                button.click MUA NGAY
+                                button.click XEM CHI TIẾT
+        .row.mv
+            each pro in ['product_01.png','product_02.png']
+                -var link = pro
+                    .col-md-6.link-pro
+                        .product-block
+                            img(src="../../images/" + link, alt="").mv
+                            .content-pro
+                                h1.name-product MÁY KHOAN CNC 3D
+                                p.evaluate
+                                    -for(var i=0 ; i<4; i++){
+                                        i.fas.fa-star.tik
+                                    -}
+                                    i.fas.fa-star  
+                                        span.danhgia (12 Đánh giá)
+                                h3.pro-name Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore commo...
+                                p.price 2.350.00 Đ
+                            .group-button
+                                button.click MUA NGAY
+                                button.click XEM CHI TIẾT

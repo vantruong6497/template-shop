@@ -1,0 +1,96 @@
+section.block-footer
+    .container
+        .row.footer-top
+            .col1
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name VỀ CHÚNG TÔI
+                .content
+                    p Công ty Cổ phẩn Công nghệ DKT đã và đang  khẳng định được vị trí hàng đầu trong lĩnh vực thương mại điện tử
+                    i.fas.fa-map-marker-alt 
+                    p.q Tầng 4 - Tòa nhà Hanoi Group
+                    p 442 Đội Cấn Ba Đình - Hà Nội
+                    i.fas.fa-envelope
+                    p support@dkt.com.vn
+                    i.fas.fa-mobile-alt
+                    p (84-4) 66558868  -  (84-4) 37868904
+            .col2
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name CHÍNH SÁCH
+                .content
+                    p Chính sách giao hàng
+                    p Chính sách đổi sản phẩm
+                    p Chính sách bảo hành
+                    p Chính sách trả góp
+                    p Giới thiệu hàng đổi trả
+                    p Vận chuyển miễn phí
+            .col3
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name DỊCH VỤ & HỖ TRỢ
+                .content
+                    p Hệ thống cửa hàng
+                    p Hướng dẫn mua hàng
+                    p Hướng dẫn thanh toán
+                    p Tích điểm đối tượng
+                    p Dịch vụ đổi trả hàng
+                    p Câu hỏi thường gặp
+            .col4
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name TIN TỨC - SỰ KIỆN
+                .content
+                    p Tin tức mới nhất
+                    p Tin tức khuyến mại
+                    p Tuyển dụng, đãi ngộ
+                    p Download tài liệu
+                    p Chương trình đối tác
+                    p Nhà phát triển ứng dụng
+            .col5
+                .top-title-pro
+                    i.fab.fa-windows.pig
+                    h3.title-name KẾT NỐI
+                .content
+                    i.fab.fa-facebook-f 
+                    p Facebook
+                    i.fab.fa-twitter
+                    p Twitter
+                    i.fab.fa-google-plus-g
+                    p Google
+                    i.fab.fa-skype
+                    p Skype
+                    i.fab.fa-instagram
+                    p Instagram
+        .row.footer-center
+            .col6
+                .footer-pay
+                    p.top-title Thanh toán:
+                    br
+                    each bank in ['bank1.png','bank2.png','bank3.png','bank4.png','bank5.png','bank6.png','bank7.png','bank8.png']
+                        -var link = bank
+                            a(href="")
+                                img(src="../../images/"+link, alt="")
+            .col7
+                .footer-answers
+                    p.top-title Giải đáp nhanh
+                    .footer-phone-a
+                        i.fas.fa-phone
+                        p.c Tư vấn miễn phí (24/7)
+                            br
+                            span 1900 650 650
+                    .footer-phone-b
+                        i.fas.fa-comments
+                        p.c Góp ý - phản hồi - thắc mắc
+                            br
+                            span 1900 650 650
+    .container-fluid
+            .row.footer-bottom
+                .ft-bottom
+                    .col-md-6.a
+                        p Bản quyền thuộc về Design Team. Phát triển bởi Bizweb.
+                    .col-md-6.b
+                        ul
+                            each item in ['Trang chủ','Giới thiệu','Sản phẩm','Tin khuyến mại','Dịch vụ','Liên hệ']
+                                li
+                                    a(href="") #{item}

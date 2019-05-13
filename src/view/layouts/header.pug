@@ -1,0 +1,53 @@
+header.block-header
+    .block-top-header
+        .container
+            .row
+                .col-md-6
+                    .item-left
+                        ul.list-item-left
+                            each item in ['fab fa-facebook-f','fab fa-google-plus-g','fab fa-instagram','fab fa-twitter']
+                                li
+                                    a(href="#")
+                                        -var link=item
+                                        i(class=link)
+                .col-md-6
+                    .item-right
+                        ul.list-item-right
+                            each itm in ['ĐĂNG KÍ','ĐĂNG NHẬP']
+                                li
+                                    a(href="") #{itm}
+    .block-list-header
+        .container
+            .row
+                .col-md-2
+                    img.block-logo(src="../../images/logo.png", alt="")
+                .col-md-6
+                    .phone-list
+                        .phone-hotline
+                            h3 HOTLINE:
+                            p (04) 9500 9650 - (04) 9500 8850 
+                        .phone-book
+                            h3 ĐẶT HÀNG NHANH:
+                            p (04) 9500 9650 - (04) 9500 8850
+                .col-md-4
+                    .input.group
+                        form(action="#")
+                            input(type="text", placeholder="Tìm kiếm...")
+                            button
+                                i.fa.fa-search
+    .block-bottom-header
+        .container
+            .row
+                .col-md-11
+                    .block-list-menu
+                     ul.block-nav-menu
+                            li.block-link-item.active TRANG CHỦ
+                            each items in ['GIỚI THIỆU','SẢN PHẨM','TIN KHUYẾN MÃI','DỊCH VỤ','LIÊN HỆ']
+                                li.block-link-item
+                                    a(href="#") #{items}
+                .col-md-1
+                    .block-cart
+                        a(href="#").ac
+                            p.count-card 0
+                            i.fas.fa-shopping-basket
+                        

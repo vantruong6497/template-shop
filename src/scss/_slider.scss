@@ -1,0 +1,96 @@
+.block-slider {
+    position: relative;
+    padding: 30px 0;
+    width: 100%;
+    .block-slider-content {
+        position: relative;
+        background-color: $color-bg;
+        height: 450px;
+        margin-right: 40px;
+        img.slider-img {
+            float: right;
+            margin-top: 50px;
+            width: 50%;
+        }
+        .slider-intro {
+            position: absolute;
+            width: 50%;
+            top: 90px;
+            margin-left: 50px;
+            h3.intro-title {
+                font-size: 30px;
+                font-family: "Roboto";
+                color: rgb(17, 17, 17);
+                text-transform: uppercase;
+            }
+            h1.intro-current {
+                font-size: 72px;
+                font-family: "Roboto";
+                color: rgb(245, 189, 16);
+                line-height: 80px;
+                font-weight: 700;
+            }
+            li.intro-item {
+                font-size: 18px;
+                font-family: "Roboto";
+                color: rgb(17, 17, 17);
+                line-height: 40px;
+                .fa-check-circle:before {
+                    color: $color-click;
+                }
+                p.intro-text {
+                    float: right;
+                    padding-left: 17px;
+                }
+            }
+            button.intro-order {
+                height: 35px;
+                background: $color-text;
+                color: white;
+                border: none;
+                margin-top: 12px;
+                &:hover {
+                    background: $color-click;
+                }
+            }
+        }
+    }
+    .block-slider-policy {
+        height: 450px;
+        margin-left: -70px;
+        display: flex;
+        flex-direction: column;
+        .policy-content {
+            margin: auto;
+            border: $boder-sty;
+            height: 100%;
+            img {
+                float: left;
+                margin-left: 29px;
+                margin-top: 50px;
+                margin-right: 19px;
+            }
+            .item-content {
+                line-height: 24px;
+                margin-top: 24px;
+                margin-left: 15px;
+                margin-right: 25px;
+                h3.title {
+                    font-size: 16px;
+                    font-family: "Roboto";
+                    color: rgb(54, 54, 54);
+                    font-weight: bold;
+                }
+                p.text {
+                    font-size: 13px;
+                    font-family: "Arial";
+                    color: rgb(137, 137, 137);
+                }
+            }
+            &:hover {
+                background: $color-click;
+                color: white;
+            }
+        }
+    }
+}

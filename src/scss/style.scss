@@ -1,0 +1,27 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "variable";
+@import "header";
+@import "slider";
+@import "product";
+.container {
+    width: 1140px;
+}
+
+.block-trade {
+    position: relative;
+    background: $color-bg;
+    height: 150px;
+    img.logot {
+        padding: 32px;
+    }
+    i {
+        margin-top: 63px;
+    }
+    i.fas.fa-chevron-left {
+        margin-left: 175px;
+    }
+}
+
+@import "footer";
